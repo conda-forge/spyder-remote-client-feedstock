@@ -1,6 +1,6 @@
 {% set name = "spyder-remote-client" %}
-{% set version = "0.0.1" %}
-{% set hash = "c0aec94337e30dfb90243fb0156df570df089cdfe8c5d008cd26305c5d55694c" %}
+{% set version = "0.0.3" %}
+{% set hash = "6fb9b16393e0dff5cf94ff4ace5fb3789c59ba4fcad7f9140584574d1f78814c" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Spyder remote client to connect to Spyder kernels via zeroconf'
+  summary: Spyder remote client to connect to Spyder kernels via zeroconf
   description: |
     Spyder remote client to connect to Spyder kernels via zeroconf.
   doc_url: https://semi-ate.github.io/spyder-remote/
