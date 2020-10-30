@@ -12,17 +12,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
     - netifaces
     - psutil
-    - python
+    - python >=3.6
     - zeroconf
 
 test:
