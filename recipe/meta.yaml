@@ -1,6 +1,6 @@
 {% set name = "spyder-remote-client" %}
-{% set version = "0.0.3" %}
-{% set hash = "6fb9b16393e0dff5cf94ff4ace5fb3789c59ba4fcad7f9140584574d1f78814c" %}
+{% set version = "0.0.4" %}
+{% set hash = "39d1a60d6dc1e5dc13630f07923054cbbfb7f586638d078d168a97d221c3f6fb" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
