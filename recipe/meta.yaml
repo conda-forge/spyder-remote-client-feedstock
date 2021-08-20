@@ -1,6 +1,6 @@
 {% set name = "spyder-remote-client" %}
-{% set version = "0.0.23" %}
-{% set hash = "34279a26436193ae7d840da1d8cc3d28f1d115d84ea455b6b6560b5c58824760" %}
+{% set version = "0.0.24" %}
+{% set hash = "c819d9c998bdd8606ce37c911c222d2c8bf912f882d6b44cd7c19b3d3a741469" %}
 
 package:
   name: {{ name|lower }}
